@@ -1,11 +1,11 @@
 FROM httpd:2.4
-COPY ./index.php /usr/local/apache2/htdocs/
+COPY ../index.php /usr/local/apache2/htdocs/
 #RUN mv /usr/local/apache2/htdocs/index.php /var/www/html/
 RUN cd /usr/local/apache2/htdocs/
 
-RUN apt update
+#RUN apt update
 #RUN apt install -y wget 
-RUN apt install -y php libapache2-mod-php 
+#RUN apt install -y php libapache2-mod-php 
 #RUN chmod 777 -Rf /usr/local/apache2/
 #RUN wget https://sourceforge.net/projects/apachegui/files/1.12-Linux-Solaris-Mac/ApacheGUI-1.12.0.tar.gz 
 #RUN mv /usr/local/apache2/ApacheGUI-1.12.0.tar.gz /usr/local/apache2/htdocs/
